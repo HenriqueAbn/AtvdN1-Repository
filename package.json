@@ -1,0 +1,18 @@
+{
+  "name": "abynerrcritic_app",
+  "version": "0.0.1",
+  "description": "Website for Filmic Reviews",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "author": "HenriqueAbn",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "path": "^0.12.7",
+    "pug": "^3.0.2"
+  }
+}
