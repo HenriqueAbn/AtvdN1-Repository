@@ -157,3 +157,33 @@
   .mobile-menu.active .line3{
     transform: rotate(45deg) translate(-5px, -7px);
   }
+
+  .review-list {
+    list-style: none;
+  }
+
+  .review {
+    display: grid;
+    grid-template-columns: 900px;
+    grid-template-rows: 310px 210px ;
+    grid-template-areas: "image" "text";
+  
+    border-radius: 15px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+  }
+
+  
+  .review-text {
+    grid-area: text;
+  }
+
+  .review-image {
+    grid-area: image;
+    background: url("/img/X-movie.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+  }
