@@ -1,5 +1,5 @@
 # AtvdN1-Repository
-A Filmic Review Website (not finished)
+A Filmic Review Website 
 
 Started this Project in 21/10/22
 
