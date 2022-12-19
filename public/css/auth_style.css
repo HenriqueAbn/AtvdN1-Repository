@@ -161,3 +161,60 @@
   .Auth-Input li{
     list-style: none;
   }
+
+  .Auth-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #2B2B2B;
+    box-sizing: border-box;
+    box-shadow: 0 5px 7px rgb(22, 22, 22);
+    border-radius: 5px;
+  }
+
+  .Auth-box h3{
+    color: azure;
+  }
+
+  .Auth-box .user-box {
+    position: relative;
+    padding: 5px;
+    letter-spacing: 3px;
+  }
+
+  .Auth-box .user-box input {
+    width: 70%;
+    padding: 10px ;
+    border-radius: 3px;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    color: #ffff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #ffff;
+    outline: none;
+    background: transparent;
+  }
+
+  .Auth-box .submit-box {
+    width: 100%;
+    padding: 3px ;
+    border-radius: 3px;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    color: #ffff;
+    margin-bottom: 15px;
+    border: #ffff;
+    text-align: center;
+    background: transparent;
+  }
+
+  .Auth-box a{
+    color: #fb9f15;
+    font-family: 'Quicksand';
+  }
+
+
