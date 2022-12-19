@@ -1,0 +1,25 @@
+<%- include('../_partial/_header1.ejs'); %>
+      <link rel="stylesheet" href="/css/auth_style.css" type="text/css"/> 
+<%- include('../_partial/_header2.ejs'); %>
+
+<main>
+    <ul>
+    <h3>Log in</h3>
+
+    <form action="/login" method="post">
+        <ul class="Auth-Input">
+        <li><input type="text" name="name" placeholder="Name"></li>
+        <li><input type="password" name="password" placeholder="Password"></li>
+        <li><input type="submit"></li>
+    </ul>
+    <a href="/signin">Make a new account</a>    
+    </ul>
+    
+  </form>
+
+   
+
+</main>
+
+
+<%- include('../_partial/_footer.ejs'); %>

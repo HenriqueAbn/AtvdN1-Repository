@@ -7,12 +7,12 @@
 
 @font-face{
   font-family: Quesha;
-  src: url(/public/img/Quesha.ttf);
+  src: url(/img/Quesha.ttf);
 }
 
 @font-face {
   font-family: Megademo;
-  src: url(/public/img/MegandemofontRegular-axGea.otf);
+  src: url(/img/MegandemofontRegular-axGea.otf);
 }
 
 *{
@@ -74,7 +74,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("/public/img/Ciné_Home_BackGround.jpg") no-repeat center center;
+  background: url("/img/Ciné_Home_BackGround.jpg") no-repeat center center;
   background-size: cover;
   height: 92vh;
 }

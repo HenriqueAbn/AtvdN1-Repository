@@ -1,16 +1,22 @@
-var express = require("express");
-var router = express.Router();
-var app = express();
+//var express = require("express");
+//var router = express.Router();
+//var app = express();
 
-app.use(express.static('/public'));
-app.use('/css', express.static(__dirname + 'public/css'))
-app.use('/js', express.static(__dirname + 'public/js'))
-app.use('/img', express.static(__dirname + 'public/img'))
+/*
+app.use(express.static(__dirname + '/public'));
 
+const AuthRoute = require('./routes/auth')
 
-router.get('', function(req,res){
+router.get('/', function(req,res){
     console.log("Home Page is Active.");
     res.render("index")
 });
 
-module.exports = router;
+
+router.get('/critics', function(req,res){
+    console.log("Critics Page is Active.");
+    res.render("critics")
+})
+*/
+
+//module.exports = router;
