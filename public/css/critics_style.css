@@ -187,3 +187,8 @@
     border-top-right-radius: 15px;
     background-size: cover;
   }
+
+  .review-list p{
+    font-size: 23px;
+    font-family: 'Quicksand', sans-serif;
+  }
