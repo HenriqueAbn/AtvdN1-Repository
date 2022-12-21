@@ -23,4 +23,14 @@ router.get('/signin', function(req,res){
     res.render("userAuth/signin")
 });
 
+router.get('/criticsAuth', function(req,res){
+    console.log("Critics Page is Active.");
+    res.render("criticsAuth")
+});
+
+router.get('/indexAuth', function(req,res){
+    console.log("Home Page is Active.");
+    res.render("home/indexAuth")
+});
+
 module.exports = router;

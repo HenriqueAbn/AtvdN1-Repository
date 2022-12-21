@@ -51,7 +51,7 @@ app.post("/login",async (req,res) => {
         const check = await collection.findOne({name:req.body.name})
 
         if(check.password === req.body.password){
-            res.render("critics")
+            res.render("criticsAuth")
         }else{
             res.send("WRONG PASSWORD")
         }
@@ -72,5 +72,5 @@ app.post("/signin",async (req,res) => {
 
     await collection.insertMany([data])
 
-    res.render("critics")
+    res.render("criticsAuth")
 })
