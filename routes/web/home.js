@@ -10,7 +10,7 @@ router.get('/', function(req,res){
 
 router.get('/critics', function(req,res){
     console.log("Critics Page is Active.");
-    res.render("critics")
+    res.render("reviews/critics")
 });
 
 router.get('/login', function(req,res){
@@ -25,7 +25,7 @@ router.get('/signin', function(req,res){
 
 router.get('/criticsAuth', function(req,res){
     console.log("Critics Page is Active.");
-    res.render("criticsAuth")
+    res.render("reviews/criticsAuth")
 });
 
 router.get('/indexAuth', function(req,res){

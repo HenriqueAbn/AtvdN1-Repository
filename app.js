@@ -17,7 +17,7 @@ app.use("/", require("./routes/api"));
 
 app.listen(app.get("port")
 ,function(){
-console.log("Server Stared on port" + app.get("port"));
+console.log("Server Stared on port http://localhost:" + app.get("port"));
 });
 
 //Database
@@ -51,7 +51,7 @@ app.post("/login",async (req,res) => {
         const check = await collection.findOne({name:req.body.name})
 
         if(check.password === req.body.password){
-            res.render("criticsAuth")
+            res.render("reviews/criticsAuth")
         }else{
             res.send("WRONG PASSWORD")
         }
@@ -60,17 +60,25 @@ app.post("/login",async (req,res) => {
         res.send("WRONG CREDENTIALS")
     }
 
-    res.render("critics")
+    res.render("reviews/critics")
 })
 
 
 app.post("/signin",async (req,res) => {
+
+    const check = await collection.findOne({name:req.body.name, password:req.body.password})
+
     const data = {
         name:req.body.name,
-        password:req.body.password ,
+        password:req.body.password,
+        email:req.body.password,
     }
 
-    await collection.insertMany([data])
+    if(check.name === req.body.name,check.password === req.body.password){
+        res.send("NAME OR PASSWORD ALREADY USED")
+    }else{
+        await collection.insertMany([data])
+    }
 
-    res.render("criticsAuth")
+    res.render("/login")
 })
