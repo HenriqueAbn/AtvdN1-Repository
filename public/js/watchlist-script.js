@@ -117,6 +117,22 @@ window.addEventListener('load', () =>{
 
         film_content_el.appendChild(film_input_el)
 
+        const film_actions_el = document.createElement("div");
+        film_actions_el.classList.add("actions");
+
+        const film_edit_el = document.createElement("button");
+        film_edit_el.classList.add("edit");
+        film_edit_el.innerHTML = "Edit";
+
+        const film_watched_el = document.createElement("button");
+        film_watched_el.classList.add("watched");
+        film_watched_el.innerHTML = "Watched";
+
+        film_actions_el.appendChild(film_edit_el);
+        film_actions_el.appendChild(film_watched_el);
+
+        film_el.appendChild(film_actions_el)
+
         list_el.appendChild(film_el);
     })
 })
