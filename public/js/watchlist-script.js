@@ -81,17 +81,43 @@ class MobileNavbar {
 
 //Watchlist
 
-const mongoose = require('mongoose')
-const collection = require("./mongodb")
-const app = require("./app")
+//const mongoose = require('mongoose')
+//const collection = require("./mongodb")
+//const app = require("./app")
 
 window.addEventListener('load', () =>{
   const form = document.querySelector("#new-film-form");
   const input = document.querySelector("#new-film-input");
-  const list_el = document.querySelector("#film-list");
+  const list_el = document.querySelector("#films");
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
+
+        const film = input.value;
+
+        if(!film){
+          alert("Please fill out the film title");
+          return;
+        }
+
+        const film_el = document.createElement("div");
+        film_el.classList.add("film");
+
+        const film_content_el = document.createElement("div");
+        film_content_el.classList.add("content");
+        film_content_el.innerText = film;
+
+        film_el.appendChild(film_content_el);
+
+        const film_input_el = document.createElement("input");
+        film_input_el.classList.add("text");
+        film_input_el.type = "text";
+        film_input_el.value = film;
+        film_input_el.setAttribute("readonly","readonly");
+
+        film_content_el.appendChild(film_input_el)
+
+        list_el.appendChild(film_el);
     })
 })
   

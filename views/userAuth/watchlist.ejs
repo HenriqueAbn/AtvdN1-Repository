@@ -1,16 +1,48 @@
 
 <%- include('../_partial/_header1.ejs'); %>
 <link rel="stylesheet" href="/css/watchlist_style.css" type="text/css"/> 
-<%- include('../_partial/_header2Auth.ejs'); %>
+<%- include('../_partial/_headerWatchlist.ejs'); %>
 
 <main>
 
     <br>
 
-
     <div class="profile-container">
-        <h2>Your Watchlist</h2>
+        <h2>Add your film</h2>
 
+        <form id="new-film-form">
+            <input
+                type="text"
+                id="new-film-input"
+                placeholder="What you want to watch?"/>
+            <input 
+                type="submit" 
+                id="new-film-submit"
+                value="Add film"/>
+        </form>
+    </div>
+
+
+
+    <div class="films-list">
+        <h2>Your Watchlist</h2>
+        <section class="film-list">
+            <div id="films">
+                <div class="film">
+                    <div class="content">
+                        <input 
+                            type="text"
+                            class="text"
+                            value="My Shiny film"
+                            readonly/>
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="watched">Watched</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
         
 

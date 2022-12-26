@@ -23,6 +23,10 @@ const LogInSchema = new mongoose.Schema({
     email:{
         type:String,
         required:true
+    },
+    films:{
+        type:String,
+        required:true
     }
 })
 

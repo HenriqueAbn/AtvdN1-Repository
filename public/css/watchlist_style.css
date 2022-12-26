@@ -201,3 +201,15 @@
     padding: 7px;
   }
 
+  .films-list {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid  #2B2B2B;
+    width: 70%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
