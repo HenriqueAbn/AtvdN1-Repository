@@ -90,6 +90,9 @@ window.addEventListener('load', () =>{
   const input = document.querySelector("#new-film-input");
   const list_el = document.querySelector("#film-list");
 
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+    })
 })
   
 
