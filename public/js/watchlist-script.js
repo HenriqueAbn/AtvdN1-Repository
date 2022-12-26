@@ -79,5 +79,17 @@ class MobileNavbar {
   );
   mobileNavbar.init();
 
+//Watchlist
 
+const mongoose = require('mongoose')
+const collection = require("./mongodb")
+const app = require("./app")
+
+window.addEventListener('load', () =>{
+  const form = document.querySelector("#new-film-form");
+  const input = document.querySelector("#new-film-input");
+  const list_el = document.querySelector("#film-list");
+
+})
+  
 
