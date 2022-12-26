@@ -33,4 +33,9 @@ router.get('/indexAuth', function(req,res){
     res.render("home/indexAuth")
 });
 
+router.get('/Watchlist', function(req,res){
+    console.log("Log In Page is Active.");
+    res.render("userAuth/watchlist")
+});
+
 module.exports = router;

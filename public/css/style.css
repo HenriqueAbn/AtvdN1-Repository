@@ -157,3 +157,14 @@ main {
 .mobile-menu.active .line3{
   transform: rotate(45deg) translate(-5px, -7px);
 }
+
+.home-content a{
+  font-size: 25px;
+  font-family: 'Megademo';
+  color: rgb(255, 55, 0);
+  border:  none;
+  padding: 4px;
+  margin-top: 4px;
+  border-radius: 4px;
+  box-shadow: #171010 5px;
+  }

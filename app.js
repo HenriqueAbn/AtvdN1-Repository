@@ -80,5 +80,5 @@ app.post("/signin",async (req,res) => {
         await collection.insertMany([data])
     }
 
-    res.render("/login")
+    res.render("usrAuth/login")
 })
