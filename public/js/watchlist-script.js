@@ -134,6 +134,21 @@ window.addEventListener('load', () =>{
         film_el.appendChild(film_actions_el)
 
         list_el.appendChild(film_el);
+
+        input.value = "";
+        film_edit_el.addEventListener('click', () => {
+          
+          if(film_edit_el.innerHTML.toLowerCase() == "edit"){
+            film_input_el.removeAttribute("readonly");
+            film_input_el.focus();
+            film_edit_el.innerText = "Save"
+          } else {
+            film_input_el.setAttribute("readonly", "readonly");
+            film_edit_el.innerHTML = "Edit"
+          }
+          
+          
+        })
     })
 })
   
