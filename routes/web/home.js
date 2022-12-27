@@ -43,4 +43,19 @@ router.get('/X-Movie', function(req,res){
     res.render("reviews/xmovie")
 });
 
+router.get('/X-MovieAuth', function(req,res){
+    console.log("Review Page is Active.");
+    res.render("reviews/xmovieAuth")
+});
+
+router.get('/blackadamAuth', function(req,res){
+    console.log("Review Page is Active.");
+    res.render("reviews/blackadamAuth")
+});
+
+router.get('/blackadam', function(req,res){
+    console.log("Review Page is Active.");
+    res.render("reviews/blackadam")
+});
+
 module.exports = router;
