@@ -1,3 +1,5 @@
+
+
 /*
 class MobileNavBar {
     constructor(mobileMenu,navList,navLinks){
@@ -81,16 +83,13 @@ class MobileNavbar {
 
 //Watchlist
 
-//const mongoose = require('mongoose')
-//const collection = require("./mongodb")
-//const app = require("./app")
-
 window.addEventListener('load', () =>{
   const form = document.querySelector("#new-film-form");
   const input = document.querySelector("#new-film-input");
   const list_el = document.querySelector("#films");
 
     form.addEventListener('submit', (e) => {
+
         e.preventDefault();
 
         const film = input.value;
@@ -105,7 +104,7 @@ window.addEventListener('load', () =>{
 
         const film_content_el = document.createElement("div");
         film_content_el.classList.add("content");
-        film_content_el.innerText = film;
+        //film_content_el.innerText = film;
 
         film_el.appendChild(film_content_el);
 
@@ -147,8 +146,12 @@ window.addEventListener('load', () =>{
             film_edit_el.innerHTML = "Edit"
           }
           
-          
         })
+
+        film_watched_el.addEventListener('click', () => {
+          list_el.removeChild(film_el)
+        })
+
     })
 })
   

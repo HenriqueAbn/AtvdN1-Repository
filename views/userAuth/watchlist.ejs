@@ -9,15 +9,17 @@
 
     <div class="profile-container">
         <h2>Add your film</h2>
-
-        <form id="new-film-form">
+        <br>
+        <form id="new-film-form" >
             <input
                 type="text"
                 id="new-film-input"
+                class="newfilm"
                 placeholder="What you want to watch?"/>
             <input 
                 type="submit" 
                 id="new-film-submit"
+                class="addfilm"
                 value="Add film"/>
         </form>
     </div>
@@ -26,21 +28,29 @@
 
     <div class="films-list">
         <h2>Your Watchlist</h2>
+        <br>
         <section class="film-list">
             <div id="films">
+                 <% /* %>
                 <div class="film">
+                   
                     <div class="content">
+                        
                         <input 
                             type="text"
                             class="text"
                             value="My Shiny film"
                             readonly/>
+                        
                     </div>
                     <div class="actions">
                         <button class="edit">Edit</button>
                         <button class="watched">Watched</button>
                     </div>
+                    
+                    <br>
                 </div>
+                <% */ %>
             </div>
         </section>
     </div>

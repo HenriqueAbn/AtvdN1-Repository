@@ -1,6 +1,5 @@
 var express = require("express");
 var path = require("path");
-//var routes = require("./routes");
 var app = express();
 const mongoose = require('mongoose')
 const collection = require("./mongodb")
@@ -72,6 +71,7 @@ app.post("/signin",async (req,res) => {
         name:req.body.name,
         password:req.body.password,
         email:req.body.password,
+        films: req.body.films
     }
 
     if(check.name === req.body.name,check.password === req.body.password){
@@ -80,5 +80,5 @@ app.post("/signin",async (req,res) => {
         await collection.insertMany([data])
     }
 
-    res.render("usrAuth/login")
+    res.render("userAuth/login")
 })
