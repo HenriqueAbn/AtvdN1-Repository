@@ -157,47 +157,26 @@
   .review-container{
     display: flex;
     flex-direction: column;
-    border: 1px solid  #2B2B2B;
     width: 70%;
     margin: auto;
     padding: 7px;
+    align-items: center;
   }
 
-  .review-1 {
+  .reviews {
     display: flex;
-    border: 5px;
+    flex-direction: ow;
+    padding: 5px;
   }
   
-  .review-1 img{
+  .reviews a {
+    padding: 10px;
+  }
+
+  .reviews img{
     height: 250px;
     width: 150px;
   }
 
-  .profile-container {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid  #2B2B2B;
-    width: 70%;
-    margin: auto;
-    padding-top: 30px;
-    padding-bottom: 25px;
-    padding-left: 7px;
-    padding-right: 7px;
-  }
 
-  .profile li{
-    padding: 7px;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .profile img {
-    width: 120px;
-    height: 120px;
-  }
-
-  .profile-info {
-    padding: 7px;
-  }
 

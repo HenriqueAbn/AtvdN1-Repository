@@ -34,8 +34,13 @@ router.get('/indexAuth', function(req,res){
 });
 
 router.get('/Watchlist', function(req,res){
-    console.log("Log In Page is Active.");
+    console.log("Watchlist Page is Active.");
     res.render("userAuth/watchlist")
+});
+
+router.get('/X-Movie', function(req,res){
+    console.log("Review Page is Active.");
+    res.render("reviews/xmovie")
 });
 
 module.exports = router;
