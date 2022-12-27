@@ -58,4 +58,14 @@ router.get('/blackadam', function(req,res){
     res.render("reviews/blackadam")
 });
 
+router.get('/batman', function(req,res){
+    console.log("Review Page is Active.");
+    res.render("reviews/thebatman")
+});
+
+router.get('/batmanAuth', function(req,res){
+    console.log("Review Page is Active.");
+    res.render("reviews/thebatmanAuth")
+});
+
 module.exports = router;
